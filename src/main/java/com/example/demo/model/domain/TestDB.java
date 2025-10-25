@@ -11,6 +11,6 @@ public class TestDB {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 값이 없어도 자동으로 할당
     private Long id;
     
-    @Column(nullable = true) // 테이블의 컬럼 설정 값을 명시
+    @Column(nullable = true) // 실제 DB 컬럼명이 'namel'인 경우 매핑
     private String name;
 }
